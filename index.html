@@ -5,25 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="header">YOUR BOOKS MANAGER</div>
     <div class="container">
       <h1>Enter book details to be added into your library</h1>
-      <form action="">
+      <form id="book-form">
         <div>
           <label for="book">Name of the book</label>
-          <input type="text" name="book-info" id="book" required />
+          <input
+            type="text"
+            name="book-info"
+            id="book"
+            autocomplete="off"
+            required
+          />
         </div>
         <div>
-          <label for="author">Name of the author</label
-          ><input type="text" name="book-info" id="author" required />
+          <label for="author">Name of the author</label>
+          <input
+            type="text"
+            name="book-info"
+            id="author"
+            autocomplete="off"
+            required
+          />
         </div>
         <div>
-          <label for="no-of-pages">Total no of pages</label
-          ><input type="number" name="book-info" id="no-of-pages" />
+          <label for="no-of-pages">Total no of pages</label>
+          <input
+            type="number"
+            name="book-info"
+            id="no-of-pages"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="buttons">
+          <button type="submit">Save</button>
+          <button type="reset">Reset</button>
         </div>
       </form>
+    </div>
+    <div class="container-2">
+      <button class="show">SHOW MY COLLECTION</button>
     </div>
   </body>
 </html>
